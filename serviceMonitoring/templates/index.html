@@ -1,0 +1,811 @@
+
+  
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BLINX CORPORATION</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/nivo-slider/css/nivo-slider.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/owl.carousel.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/owl.transitions.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/venobox/venobox.css' %}" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="{% static 'css/nivo-slider-theme.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  
+
+  <!-- Responsive Stylesheet File -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div id="preloader"></div>
+
+  <header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="bensonweb.html">
+                  <h1><span>Blinx Corporation</span></h1>
+                  <!-- Uncomment below if you prefer to use an image logo -->
+                  <!-- <img src="img/logo.png" alt="" title=""> -->
+								</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#services">Services</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#projects">Projects</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                  </li>
+
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="https://twitter.com/home/benson31129258" >Twitter</a></li>
+                      <li><a href="https://www.linkedin.com/in/benson-makau-657b7b17b">LinkedIn</a></li>
+                      <li><a href="https://wa.me/254758413462?text=Hello%20%2C">WhatsApp</a></li>
+                    </ul> 
+                  </li>
+
+                  <li>
+                    <a class="page-scroll" href="#blog">Blog</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse -->
+            </nav>
+            <!-- END: Navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-area end -->
+  </header>
+  <!-- header end -->
+
+  <!-- Start Slider Area -->
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        <img src="{% static 'img/slider/slider1.jpg' %}" alt="" title="#slider-direction-1" />
+        <img src="{% static 'img/slider/slider2.jpg' %}" alt="" title="#slider-direction-2" />
+        <img src="{% static 'img/slider/slider3.jpg' %}" alt="" title="#slider-direction-3" />
+      </div>
+
+      <!-- direction 1 -->
+      <div id="slider-direction-1" class="slider-direction slider-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">BLINX Corporation</h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">We're In The Business Of Helping You Start Your Web Development Journey.</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction 2 -->
+      <div id="slider-direction-2" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content text-center">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">Blinx Corporation</h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">We code responsives websites.</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction 3 -->
+      <div id="slider-direction-3" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">Blinx Corporation</h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">Helping you to get along with your coding dream.</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Slider Area -->
+
+  <!-- Start About area -->
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>About Us</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+								  <img src="{% static 'img/about/1.jpg' %}" alt="">
+								</a>
+            </div>
+          </div>
+        </div>
+        <!-- single-well end-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">Blinx Corporation</h4>
+              </a>
+              <p>
+                
+              </p>
+              <ul>
+                <li>
+                  <i class="fa fa-check"></i> Blinx Corporation is an IT based technology company that solves the day to day Technology problems.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Its composed of very qualified team members with degree in the same.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> We deliver customer satisfactory services.
+                </li> 
+                <li>
+                  <i class="fa fa-check"></i> For more information,contact us on our various social media applications.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Feel free to leave a comment in the contact section.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+
+  <!-- Start Service area -->
+  <div id="services" class="services-area area-padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline services-head text-center">
+            <h2>Our Services</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="services-contents">
+
+          <!-- Start Left services -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-code"></i>
+										</a>
+                  <h4>Website Development</h4>
+                  <p>
+                    We develop professional websites with the most appealing display to our clients.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-code"></i>
+										</a>
+                  <h4>Desktop App development</h4>
+                  <p>
+                    We are experts in Developing desktop applications using Java.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-code"></i>
+										</a>
+                  <h4>Android App development</h4>
+                  <p>
+                    The apps we create focus more on the users giving them the BEST experience they may ever need.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-code"></i>
+										</a>
+                  <h4>Payment Integrations</h4>
+                  <p>
+                    We provide payment solution by integrating Mobile payments as well as online mobile payments into your systems.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-code"></i>
+										</a>
+                  <h4>Network Implimentation</h4>
+                  <p>
+                    We design networks for your business, enterprise as well as home to suit your needs.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-code"></i>
+										</a>
+                  <h4>SUPPORT</h4>
+                  <p>
+                    We offer support and advice on the best solution for any tech problem your face.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>     
+
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Service area -->
+
+<!--Coming soon area-->
+<div id="projects">
+ 
+<div class="container h-100 d-flex">
+  <div class="jumbotron my-auto">
+    <h1 class="display-3" style="text-align: center; color: green;">PROJECTS</h1>
+    <h3 class="display-3" style="text-align: center; color: green;">COMING SOON</h3>
+    <p class="lead" style="text-align: center;">This Section is under maintainance. </p>
+    <p style="color: indianred; text-align: center;">We are very sorry for the inconvinience. </p>
+  </div>
+</div>
+
+</div>
+  <!--End of Coming Soon-->
+
+  <!-- Start reviews Area -->
+  <div class="reviews-area hidden-xs">
+    <div class="work-us">
+      <div class="work-left-text">
+        <a href="#">
+						<img src="{% static 'img/about/2.jpg' %}" alt="working with us">
+					</a>
+      </div>
+      <div class="work-right-text text-center">
+        <h2>working with us</h2>
+        <h5>We do Web Design, Develop android apps,Host websites,Fix PC issues and much more.</h5>
+        <a href="https://wa.me/254758413462?text=Hello%20%2C" class="fa fa-whatsapp">Contact us</a>
+      </div>
+    </div>
+  </div>
+  <!-- End reviews Area -->
+
+  <!-- Start portfolio Area -->
+  <div id="portfolio" class="portfolio-area area-padding fix">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Our Portfolio</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Start Portfolio -page -->
+        <div class="awesome-project-1 fix">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="awesome-menu ">
+              <ul class="project-menu">
+                <li>
+                  <a href="#" class="active" data-filter="*">All</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".development">Development</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".design">Design</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".photo">Photoshop</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="awesome-project-content">
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'img/portfolio/1.jpg' %}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="{% static 'img/portfolio/1.jpg' %}">
+                      <h4>Business City</h4>
+                      <span>Web Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'img/portfolio/2.jpg' %}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="{% static 'img/portfolio/2.jpg' %}">
+                      <h4>Blue Sea</h4>
+                      <span>Photoshop</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="{% static 'img/portfolio/3.jpg' %}" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="{% static 'img/portfolio/3.jpg' %}">
+                      <h4>Beautiful Nature</h4>
+                      <span>Web Design</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+       
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- awesome-portfolio end -->
+  
+ 
+  <!-- Start Blog Area -->
+  <div id="blog" class="blog-area">
+    <div class="blog-inner area-padding">
+      <div class="blog-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Updates</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start Left Blog -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-blog">
+              <div class="single-blog-img">
+                <a href="blog.html">
+										<img src="{% static 'img/blog/1.jpg' %}" alt="">
+									</a>
+              </div>
+              <div class="blog-meta">
+                <span class="comments-type">
+										<i class="fa fa-comment-o"></i>
+										<!--<a href="#">13 comments</a>-->
+									</span>
+                <span class="date-type">
+										<i class="fa fa-calendar"></i>
+									</span>
+              </div>
+              <div class="blog-text">
+                <h4>
+                                        <a href="blog.html">Django</a>
+									</h4>
+                <p>
+                 Django is a python web framework that makes things quite simpler and easy since much is done for you.Click read more and get to interact with its documentation.
+                </p>
+              </div>
+              <span>
+									<a href="https://docs.djangoproject.com/en/3.0/" class="ready-btn">Read more</a>
+								</span>
+            </div>
+            <!-- Start single blog -->
+          </div>
+          <!-- End Left Blog-->
+          <!-- Start Left Blog -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-blog">
+              <div class="single-blog-img">
+                <a href="blog.html">
+										<img src="{% static 'img/blog/2.jpg' %}" alt="">
+									</a>
+              </div>
+              <div class="blog-meta">
+                <span class="comments-type">
+										<i class="fa fa-comment-o"></i>
+										<!--  <a href="#">10 comments</a>-->
+									</span>
+                <span class="date-type">
+										<i class="fa fa-calendar"></i>
+									</span>
+              </div>
+              <div class="blog-text">
+                <h4>
+                                        <a href="blog.html">Bootstrap</a>
+									</h4>
+                <p>
+                  Bootstrap is a HTML,CSS and JavaScript web framework that is among the very best frameworks we have come across.To know more click the <STRONG>Read More</STRONG> button below,or contact one of the team members.
+                </p>
+              </div>
+              <span>
+									<a href="https://getbootstrap.com/" class="ready-btn">Read more</a>
+								</span>
+            </div>
+            <!-- Start single blog -->
+          </div>
+          <!-- End Left Blog-->
+          <!-- Start Right Blog-->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-blog">
+              <div class="single-blog-img">
+                <a href="blog.html">
+										<img src="{% static 'img/blog/3.jpg'%}" alt="">
+									</a>
+              </div>
+              <div class="blog-meta">
+                <span class="comments-type">
+										<i class="fa fa-comment-o"></i>
+									<!--	<a href="#">10 comments</a>-->
+									</span>
+                <span class="date-type">
+										<i class="fa fa-calendar"></i>
+									</span>
+              </div>
+              <div class="blog-text">
+                <h4>
+                                        <a href="blog.html">GitHub</a>
+									</h4>
+                <p>
+                  Follow us on github and get to see the kind of projects we work on.Regards
+                </p>
+                <span>
+									<a href="https://github.com.com/makaubenson" class="ready-btn">GITHUB</a>
+								</span>
+              </div>
+              <span>
+									<!--<a href="..." class="ready-btn">Read more</a>-->
+								</span>
+            </div>
+          </div>
+          <!-- End Right Blog-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Blog -->
+  <!-- Start Suscrive Area -->
+  <div class="suscribe-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+          <div class="suscribe-text text-center">
+            <h3>Need To Talk To Us?<br>Visit Our Contact Section Below</h3>
+
+            <a class="sus-btn" href="#">Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Suscrive Area -->
+  <!-- Start contact Area -->
+  <div id="contact" class="contact-area">
+    <div class="contact-inner area-padding">
+      <div class="contact-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Contact us</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-mobile"></i>
+                <p>
+                  Call: +254758413461<br>
+                  <span>Monday-Friday (8am-5pm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-envelope-o"></i>
+                <p>
+                  Email: bensonmakau2000@gmail.com<br>
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-map-marker"></i>
+                <p>
+                  Location: NAIROBI<br>
+                  <span>Afya Center</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+       <!--Contact Section-->
+      
+
+       
+       <!--End of Contact Section-->
+
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>BLINX CORPORATION</span></h2>
+                </div>
+
+                <p>Visit us in our social media platforms and get to know more about us.</p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="https://www.linkedin.com/in/benson-makau-657b7b17b"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/home/benson31129258"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="bensonmakau2000@gmail.com"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/254758413462?text=Hello%20%2C"><i class="fa fa-whatsapp"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Benson Makau</h4>
+                <p>
+                 Do you need more clarification?
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel:</span> +254758413462</p>
+                  <p><span>Email:</span> bensonmakau2000@gmail.com</p>
+                  <p><span>Working Hours:</span> 8am-5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Instagram</h4>
+                <div class="flicker-img">
+                  <a href="#"><img src="{% static 'img/portfolio/1.jpg' %}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/portfolio/2.jpg' %}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/portfolio/3.jpg' %}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/portfolio/4.jpg' %}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/portfolio/5.jpg' %}" alt=""></a>
+                  <a href="#"><img src="{% static 'img/portfolio/6.jpg' %}" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>Makau<span>and</span>Sons</strong>. All Rights Reserved.
+              </p>
+            </div>
+            <div class="credits">
+              
+              Designed by <a href="..."><span>Blinx Corporation</span>.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'lib/knob/jquery.knob.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/parallax/parallax.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/nivo-slider/js/jquery.nivo.slider.js' %}" type="text/javascript"></script>
+  <script src="{% static 'lib/appear/jquery.appear.js' %}"></script>
+  <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'js/contactform.js' %}"></script>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
