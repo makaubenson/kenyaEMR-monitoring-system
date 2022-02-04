@@ -1,0 +1,14 @@
+{% block content%}
+
+<a href="/"> <h1>System Monitoring </h1> </a>
+
+<label> Enter address for system </label>
+<label>             </label>
+<form method="POST" action="{%url 'home'%}">
+    {% csrf_token %}
+    <input type="text" name = "address" placeholder="enter system url..."/>
+</form>
+
+<hr>
+
+{% endblock %}
