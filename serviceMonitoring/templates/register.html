@@ -98,12 +98,6 @@
                 >
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                      <a class="page-scroll" href="/">Login</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="/register">Register</a>
-                    </li>
-                    <li>
                       <a
                         class="page-scroll"
                         href="https://data.kenyahmis.org:8500/openmrs/kenyaemr/helpDialog.page"
@@ -123,17 +117,18 @@
     </header>
     <!-- header end -->
     <!--Login Form-->
+
     {% load crispy_forms_tags %}
 
-    <!--Login-->
+    <!--Register-->
     <div class="container py-5" style="margin-top: 10%">
-      <h1>Login</h1>
+      <h1>User Registration</h1>
       <form method="POST">
-        {% csrf_token %} {{ login_form|crispy }}
-        <button class="btn btn-primary" type="submit">Login</button>
+        {% csrf_token %} {{ register_form|crispy }}
+        <button class="btn btn-primary" type="submit">Register</button>
       </form>
       <p class="text-center">
-        Don't have an account? <a href="/register">Create an account</a>.
+        If you already have an account, <a href="/">login</a> instead.
       </p>
     </div>
 

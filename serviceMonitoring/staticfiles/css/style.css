@@ -174,17 +174,6 @@ button[type="submit"] {
   box-shadow: none !important;
 }
 
-div#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 99999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #fff url("/img/preloader.gif") no-repeat center center;
-}
-
 ::-moz-selection {
   background: #3ec1d5;
   text-shadow: none;

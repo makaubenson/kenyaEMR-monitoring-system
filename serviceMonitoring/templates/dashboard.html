@@ -98,18 +98,34 @@
                 >
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                      <a class="page-scroll" href="/">Login</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="/register">Register</a>
-                    </li>
-                    <li>
                       <a
                         class="page-scroll"
                         href="https://data.kenyahmis.org:8500/openmrs/kenyaemr/helpDialog.page"
                         >Help</a
                       >
                     </li>
+                    {% if user.is_authenticated %}
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Welcome, {{user.username}}</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="/logout"
+                        style="color: white; font-weight: bold"
+                        >Logout</a
+                      >
+                    </li>
+                    {% else %}
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+
+                    {% endif %}
                   </ul>
                 </div>
                 <!-- navbar-collapse -->
@@ -122,21 +138,21 @@
       <!-- header-area end -->
     </header>
     <!-- header end -->
-    <!--Login Form-->
-    {% load crispy_forms_tags %}
-
-    <!--Login-->
-    <div class="container py-5" style="margin-top: 10%">
-      <h1>Login</h1>
-      <form method="POST">
-        {% csrf_token %} {{ login_form|crispy }}
-        <button class="btn btn-primary" type="submit">Login</button>
-      </form>
-      <p class="text-center">
-        Don't have an account? <a href="/register">Create an account</a>.
+    <div class="jumbotron" style="margin-top: 10%">
+      <h1 class="display-4">Testing isUp url</h1>
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
+      <hr class="my-4" />
+      <p>
+        It uses utility classes for typography and spacing to space content out
+        within the larger container.
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </p>
     </div>
-
     <!-- Start Footer bottom Area -->
     <footer>
       <div class="footer-area-bottom">
@@ -172,6 +188,9 @@
     ></script>
     <script src="{% static 'lib/appear/jquery.appear.js' %}"></script>
     <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="{% static 'js/contactform.js' %}"></script>
 
     <script src="{% static 'js/main.js' %}"></script>
   </body>
