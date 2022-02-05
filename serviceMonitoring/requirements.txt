@@ -4,7 +4,9 @@ charset-normalizer==2.0.11
 Django==4.0.2
 django-crispy-forms==1.14.0
 idna==3.3
+python-nmap==0.7.1
 requests==2.27.1
+schedule==1.1.0
 sqlparse==0.4.2
 tzdata==2021.5
 urllib3==1.26.8

@@ -15,17 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from serverUp.views import server,register_request,login_request,dashboard,logout_request
+from serverUp.views import server,register_request,login_request,dashboard,logout_request,home
 
 
 
 urlpatterns = [
-	path('',login_request,name="login"),
+    path('', home, name='home'),
+	path('login',login_request,name="login"),
     path('dashboard',dashboard,name="dashboard"),
     path('isup/', server, name='serverup'),
     path("register", register_request, name="register"),
     path("logout", logout_request, name= "logout"),
     path('admin/', admin.site.urls),
-   
-
 ]

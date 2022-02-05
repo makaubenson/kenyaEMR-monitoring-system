@@ -2392,3 +2392,7 @@ body {
 .login-page {
   justify-content: center;
 }
+.service-card {
+  margin-left: 5% !important;
+  
+}

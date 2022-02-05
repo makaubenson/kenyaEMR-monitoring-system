@@ -98,34 +98,18 @@
                 >
                   <ul class="nav navbar-nav navbar-right">
                     <li>
+                      <a class="page-scroll" href="/">Login</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="/register">Register</a>
+                    </li>
+                    <li>
                       <a
                         class="page-scroll"
                         href="https://data.kenyahmis.org:8500/openmrs/kenyaemr/helpDialog.page"
                         >Help</a
                       >
                     </li>
-                    {% if user.is_authenticated %}
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"
-                        >Welcome, {{user.username}}</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        href="/logout"
-                        style="color: white; font-weight: bold"
-                        >Logout</a
-                      >
-                    </li>
-                    {% else %}
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="/login">Login</a>
-                    </li>
-
-                    {% endif %}
                   </ul>
                 </div>
                 <!-- navbar-collapse -->
@@ -138,29 +122,38 @@
       <!-- header-area end -->
     </header>
     <!-- header end -->
-    <div
-      class="card service-card"
-      style="
-        width: 18rem;
-        margin-right: 5% !important;
-        margin-top: 6% !important;
-        margin-left: 5% !important;
-        margin-bottom: 5% !important;
-        background: grey;
-      "
-    >
-      <div class="card-body">
-        <h5 class="card-title" style="color: white !important">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
+
+    <!--Login Form-->
+    {% load crispy_forms_tags %}
+    <div class="jumbotron" style="margin-top: 8%">
+      <h1 class="display-4">KenyaEMR</h1>
+      <p class="lead">
+        KenyaEMR is a customized system that supports the care and treatment of
+        HIV/AIDS. The system was designed and developed by I-TECH and partners
+        in 2012, following Standards and Guidelines developed by I-TECH in
+        collaboration with the Kenyan Ministry of Health
+      </p>
+      <hr class="my-4" />
     </div>
     <!-- Start Footer bottom Area -->
+    <div style="margin-top: 5%">
+      <a href="/" hidden> <h1>System Monitoring</h1> </a>
+
+      <label hidden> Enter address for system </label>
+      <label> </label>
+      <form method="POST" action="{%url 'home'%}">
+        {% csrf_token %}
+        <input
+          type="text"
+          name="address"
+          placeholder="enter system url..."
+          value="www.blinx.co.ke"
+        />
+      </form>
+
+      <hr />
+    </div>
+
     <footer>
       <div class="footer-area-bottom">
         <div class="container">
@@ -195,9 +188,6 @@
     ></script>
     <script src="{% static 'lib/appear/jquery.appear.js' %}"></script>
     <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
-
-    <!-- Contact Form JavaScript File -->
-    <script src="{% static 'js/contactform.js' %}"></script>
 
     <script src="{% static 'js/main.js' %}"></script>
   </body>
